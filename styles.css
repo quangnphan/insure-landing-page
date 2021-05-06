@@ -1,0 +1,400 @@
+:root {
+  --DarkViolet: hsl(256, 26%, 20%);
+  --GrayishBlue: hsl(216, 30%, 68%);
+  --VeryDarkViolet: hsl(270, 9%, 17%);
+  --DarkGrayishViolet: hsl(273, 4%, 51%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,html {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+h1,
+h3 {
+  font-family: "DM Serif Display", serif;
+}
+button{
+    cursor: pointer;
+}
+.hbg{
+    display: none;
+}
+.img-mobile{
+    display: none;
+}
+.intro-img-left{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    bottom: -30%;
+}
+.intro-img-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 500px;
+    z-index: 1;
+}
+.navbar{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar li{
+    margin-left: 30px;
+}
+.navbar a{
+    color: var(--DarkGrayishViolet);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    opacity: 0.8;
+}
+.navbar a:hover{
+    color: var(--VeryDarkViolet);
+}
+a.nav-btn{
+    padding: 15px 30px;
+    border: 1px solid var(--VeryDarkViolet);
+    color: var(--VeryDarkViolet);
+}
+a.nav-btn:hover{
+    background: black;
+    color: var(--VeryLightGray);
+}
+.intro-heading{
+    background-color: var(--DarkViolet);
+    padding: 100px 0;
+    position: relative;
+}
+.intro-width hr{
+    width: 10rem;
+    color: var(--VeryLightGray);
+    opacity: 0.5;
+}
+.intro-width{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    color: var(--VeryLightGray);
+    position: relative;
+}
+.intro-width .heading{
+    width: 50%;
+    margin-right: 20px;
+}
+.intro-width .img-desktop{
+    position: absolute;
+    right: 0;
+}
+.intro-width .heading h1{
+    font-size: 4rem;
+    opacity: 0.8;
+    margin-top: 40px;
+}
+.intro-width .heading p{
+    opacity: 0.8;
+    margin: 30px auto;
+}
+.intro-width .heading button{
+    padding: 15px 30px;
+    border: none;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    color: var(--VeryLightGray);
+    background: none;
+    border: 1px solid var(--VeryLightGray);
+    opacity: 0.8;
+    font-size: 1rem;
+}
+.intro-width .heading button:hover{
+    background: white;
+    color: var(--VeryDarkViolet);
+}
+.content .max-width{
+    max-width: 1100px;
+    margin: 300px auto 150px auto;
+}
+.content hr{
+    width: 10rem;
+    color: var(--VeryDarkViolet);
+    opacity: 0.5;
+}
+.content .content-heading h1{
+    margin: 70px auto;
+    font-size: 4rem;
+    color: var(--VeryDarkViolet);
+    font-weight: 700;
+}
+.content-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content-flex .flex{
+    width: 350px;
+}
+.content-flex .flex h3{
+    font-size: 1.7rem;
+    color: var(--VeryDarkViolet);
+    margin: 25px auto;
+}
+.content-flex .flex p{
+    color: var(--DarkGrayishViolet);
+    opacity: 0.8;
+}
+.findout{
+    background: url('images/bg-pattern-how-we-work-desktop.svg') var(--DarkViolet) no-repeat;
+    background-position: right;
+    color: var(--VeryLightGray);
+    display: flex;
+    padding: 70px;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.findout h1{
+    width: 50%;
+    font-size: 3rem;
+}
+.findout button{
+    border: none;
+    background: none;
+    border: 1px solid var(--VeryLightGray);
+    color: var(--VeryLightGray);
+    font-size: 0.8rem;
+    height: auto;
+    align-self: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.findout button:hover{
+    background: white;
+    color: var(--VeryDarkViolet);
+}
+.footer{
+    background: url('images/bg-pattern-footer-desktop.svg') no-repeat var(--VeryLightGray);
+    background-position: top left;
+}
+.footer .max-width{
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 0;
+}
+.footer hr{
+    opacity: 0.3;
+    color: var(--VeryLightGray);
+    margin-bottom: 30px;
+}
+.footer-contact{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.footer-contact .icons a{
+    margin-left: 10px;
+}
+.footer-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-info ul{
+    flex: 1 20%;
+    text-transform: uppercase;
+}
+.footer-info a{
+    color: var(--DarkViolet);
+    font-weight: 700;
+    line-height: 2;
+}
+.footer-info .list-heading{
+    color: var(--DarkGrayishViolet);
+    font-weight: 700;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.icons img:hover{
+    transform: scale(1.2);
+}
+
+@media(max-width: 700px){
+    .hbg{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar{
+        width: 80%;
+        margin: 30px auto;
+        z-index: 2;
+    }
+    .intro-width{
+        flex-direction: column-reverse;
+    }
+    .intro-width .img-desktop{
+        display: none;
+    }
+    .intro-width .img-mobile{
+        display: block;
+        width: 100%;
+    }
+    .intro hr{
+        display: none;
+    }
+    .intro-heading{
+        padding: 0;
+        padding-bottom: 50px;
+        margin: auto;
+        text-align: center;
+    }
+    .intro-img-left{
+        display: none;
+    }
+    /*replace the desktop image for mobile to make it fit better*/
+    .intro-img-right{
+        position: absolute;
+        width: 50%;
+        right: -100px;
+        top: 90%;
+        z-index: 1;
+    }
+    .intro-heading .heading{
+        width: 100%;
+        margin: auto;
+        background: url('images/bg-pattern-intro-left-mobile.svg') no-repeat;
+        background-position: top left;
+    }
+    .intro-heading .heading h1{
+        width: 80%;
+        margin: 70px auto 30px auto;
+        font-size: 2.5rem;
+    }
+    .intro-heading .heading p{
+        width: 80%;
+        margin: 0 auto 30px auto;
+    }
+    .content{
+        text-align: center;
+    }
+    .content hr{
+        margin: auto;      
+    }
+    .content-flex{
+        flex-direction: column;
+    }
+    .content .content-heading h1{
+        font-size: 2.8rem;
+    }
+    .content-flex .flex{
+        width: 80%;
+        margin: 30px auto;
+    }
+    .findout{
+        background: url('images/bg-pattern-how-we-work-mobile.svg') no-repeat top right;
+        background-color: var(--DarkViolet);
+        flex-direction: column;
+    }
+    .findout h1{
+        width: 100%;
+        font-size: 2.5rem;
+        margin: 30px auto;
+    }
+    .footer{
+        background: url('images/bg-pattern-footer-mobile.svg') no-repeat top cover;
+    }
+    .footer .max-width{
+        max-width: 80%;
+        text-align: center;
+    }
+    .footer-contact .logo{
+        width: 200px;
+        height: auto;
+        margin: 30px auto;
+    }
+    .footer .footer-contact{
+        flex-direction: column;
+    }
+    .footer-contact .icons{
+        margin-bottom: 50px;
+    }
+    .footer-info{
+        flex-direction: column;
+    }
+    .footer-info .list-heading{
+        margin-top: 50px;
+    }
+
+    .active .nav ul{
+        display: block;
+        position: fixed;
+        width: 100%;
+        background: url('images/bg-pattern-mobile-nav.svg') no-repeat bottom;
+        background-size: contain;
+        background-color: var(--VeryDarkViolet);
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 5;
+        margin-top: 90px;
+        text-align: center;
+    }
+    .nav li{
+        margin-top: 50px;
+    }
+    .nav ul a{
+        color: var(--VeryLightGray);
+    }
+    .nav ul a:hover{
+        color: var(--VeryLightGray);
+        text-decoration: underline;
+    }
+    .nav ul .nav-btn{
+        border: 1px solid var(--VeryLightGray);
+    }
+    .nav ul .nav-btn:hover{
+        background: var(--VeryLightGray);
+        color: var(--VeryDarkViolet);
+        text-decoration: none;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: white;
+        height: 90px;
+        margin: auto;
+        align-items: center;
+        padding: 50px;
+      }
+      
+      /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+      .sticky + .intro {
+        padding-top: 60px;
+      }
+}
+
